@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "scope": "Portable model restoration, real development TIFF inference, grid and requested vector export smoke checks; not new accuracy results",
+  "models": {
+    "pan_2_5m": {
+      "status": "PASS",
+      "strict_checkpoint_loading": [
+        "Texture teacher and student: strict restore / finite output",
+        "SegFormer V9 roads: strict restore / finite output"
+      ],
+      "real_tiff_prediction": "PASS",
+      "exact_output_grid_and_class_schema": "PASS",
+      "requested_vector_archives": 1,
+      "shapefiles_with_sidecars": 4,
+      "independent_accuracy_evaluation": false
+    },
+    "native_0_6m": {
+      "status": "PASS",
+      "strict_checkpoint_loading": [
+        "Four-band attention U-Net++: strict restore / finite output",
+        "CoANet roads: strict restore / finite output"
+      ],
+      "real_tiff_prediction": "PASS",
+      "exact_output_grid_and_class_schema": "PASS",
+      "requested_vector_archives": 2,
+      "shapefiles_with_sidecars": 6,
+      "independent_accuracy_evaluation": false
+    }
+  }
+}
